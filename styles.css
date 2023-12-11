@@ -4,10 +4,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#img {
-    height: 800px;
-    width: 100%;
-}
 
 #navBackground {
     background: linear-gradient(to top, transparent 0%, black 100%);
@@ -33,18 +29,6 @@ nav li {
     border-right: 2px solid #ffffff;
     padding: 0 10px 0 10px;
     font-weight: 300;
-}
-
-#green_b {
-    width: 40%;
-    height: 500px;
-    background-color: rgb(72, 112, 33);
-}
-
-#black_b {
-    width: 60%;
-    height: 500px;
-    background-color: rgb(66, 66, 66);
 }
 
 #carousel {
