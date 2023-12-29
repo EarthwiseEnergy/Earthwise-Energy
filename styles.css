@@ -4,6 +4,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.navbar-brand {
+    border: 0 !important;
+    padding: 0 !important; 
+    background-color: transparent !important;
+}
 
 #navBackground {
     background: linear-gradient(to top, transparent 0%, black 100%);
@@ -15,6 +20,15 @@ body {
 #navBackground a {
     text-decoration: none;
     color: #fff;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+#navBackground a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #7ac242;
+    border-radius: 10px;
 }
 
 #logo {
@@ -25,12 +39,25 @@ nav li {
     float: right;
 }
 
+.dropdown-menu {
+    background-color: rgb(66, 66, 66) !important;
+}
+
+.dropdown-menu li {
+    float: left;
+    width: 100%;
+}
+
 #seperator {
-    border-right: 2px solid #ffffff;
+    border-right: #fff 2px solid;
     padding: 0 10px 0 10px;
     font-weight: 300;
 }
+ 
+@media (min-width: 1261px) { 
 
 #carousel {
-    height: 80vh;
+    height: 90vh;
+}
+
 }
