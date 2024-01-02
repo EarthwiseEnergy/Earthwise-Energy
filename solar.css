@@ -1,28 +1,48 @@
+h2 {
+    font-size: clamp(1.5rem, 12vw + 1rem, 2.5rem) !important;
+}
 
 
-.topcontent {
+.content {
     width: 80%;
-    height: 600px;
+    height: fit-content;
     margin: auto;
     padding: 2%;
 }
 
-.topcontent a {
+.scrollnav span {
+    margin-left: 8%;
+}
+
+.scrollnav a {
     font-weight: bolder;
     width: 100%;
     border-bottom: black 2px solid;
     padding: 1.5% 0 1.5% 0;
 }
 
-.topcontent a:hover {
-    font-size: 1.5vw;
+.scrollnav img {
+    height: 2vw;
+    width: 3vw;
+    float: right;
 }
 
-.topcontent span {
-    margin-left: 8%;
+.box {
+    display: block;
 }
 
+.box p {
+    width: 55%;  
+    float: left; 
+    word-wrap: break-word;
+}
 
+.box img {
+    float: right;
+    width: 41%; 
+    height: 96%; 
+    float: right; 
+}
 
 #titlecard {
     width: 100%;
@@ -39,7 +59,7 @@
 @media (min-width: 992px) {
     
     #head_img {
-        background-image: url("https://smd-cms.nasa.gov/wp-content/uploads/2023/05/pia03149-copy.jpg");
+        background-image: url("img/thesun.webp");
     
         /* Set a specific height */
         min-height: 500px;
@@ -58,28 +78,33 @@
         height: 70px;
     }
 
-    .topcontent a {
-        font-size: 1.3vw;
-    }
-
     .scrollnav {
         float: left;
         width: 44%;
         margin-top: 20px;
+        height: fit-content;
+    }
+
+    .scrollnav a {
+        font-size: 1.5rem;
+    }
+
+    .scrollnav a:hover {
+        font-size: calc(1.5rem + 2px);
     }
 
     .box {
         float: right;
-        font-size: 1.1vw;
         width: 56%;
+        margin-top: 20px;
+        height: fit-content;
+        
     }
 
-    .box p {
-        width: 55%; 
-        float: left; 
-        word-wrap: break-word; 
-        padding-left: 8%; 
-        padding-top: 8%;
+    .box p { 
+        font-size: 1.2vw;
+        padding-left: 8%;
+        padding-top: 3%; 
     }
 
 }
@@ -87,7 +112,7 @@
 @media (max-width: 992px) { 
 
     #head_img {
-        background-image: url("https://smd-cms.nasa.gov/wp-content/uploads/2023/05/pia03149-copy.jpg");
+        background-image: url("img/thesun.webp");
     
         /* Set a specific height */
         min-height: 300px;
@@ -105,28 +130,31 @@
     .body {
         padding-top: 10px;
     }
-    
-    .topcontent a:hover {
-        font-size: 3vw;
-    }
 
     .scrollnav {
         width: 100%;
         height: fit-content;
     }
 
-    .box {
-        font-size: 2vw;
-        width: 100%;
-        height: fit-content;
+    .scrollnav a {
+        font-size: clamp(.8rem, 1vw, 2.5vw);
     }
 
-    .box p {
-        width: 55%; 
-        float: left; 
-        word-wrap: break-word; 
-        padding-left: 10%; 
-        padding-top: 6%;
+    .scrollnav a:hover {
+        font-size: calc(.8rem + 2px);
+    }
+
+    .box {
+        width: 100%;
+        height: max-content;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    .box p { 
+        font-size: clamp(1vw, 2.5vw, 1.3rem);
+        padding-left: 10%;
+        padding-top: 3%; 
     }
 
 }
@@ -134,4 +162,12 @@
 footer {
     background-color: black;
     height: 20vh;
+}
+
+
+
+.img-container {
+    height: fit-content;
+    width: 100%;
+    text-align: center;
 }
