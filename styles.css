@@ -54,7 +54,7 @@ nav li {
     font-weight: 300;
 }
  
-@media (min-width: 1261px) { 
+@media (min-width: 1261px) {
 
 #carousel {
     height: 90vh;
