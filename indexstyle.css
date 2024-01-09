@@ -1,7 +1,7 @@
 .cintro {
-    width: 80%; 
-    height: 55%; 
-    margin: 10%; 
+    width: fit-content; 
+    height: fit-content; 
+    margin: 12%; 
     background-color: rgba(0, 0, 0, .45);
     font-weight: bold; 
     position: absolute; 
@@ -12,7 +12,6 @@
 
 
 #green_b {
-    height: 500px;
     background-color: rgb(72, 112, 33);
     color: white;
 }
