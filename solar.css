@@ -58,7 +58,6 @@ h2 {
 @media (min-width: 992px) {
     
     #head_img {
-        background-image: url("img/thesun.webp");
     
         /* Set a specific height */
         min-height: 500px;

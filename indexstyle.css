@@ -22,8 +22,14 @@
 }
 
 #black_b {
-    height: auto;
+    height: fit-content;
     background-color: rgb(66, 66, 66);
+    color: white;
+}
+
+#black_b h1 {
+    font-size: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .col {
@@ -33,4 +39,30 @@
 footer {
     background-color: black;
     height: 20vh;
+}
+
+#card {
+    background-color: inherit; 
+    color: inherit;
+    border-color: white;
+    text-align: center;
+    
+}
+
+#card img {
+    width: 60%;
+    height: 60%;
+}
+
+#cardlink {
+    text-decoration: none;
+    color: white;
+}
+
+.col a:hover {
+    #card {
+        transform: scale(1.05);
+        box-shadow: 1px 4px 8px white;
+        transition: 450ms;
+    }
 }
