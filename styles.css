@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family:'Poppins', sans-serif !important;
 }
 
 .navbar-brand {
@@ -64,4 +64,33 @@ nav li {
     height: 90vh;
 }
 
+}
+
+footer {
+    background-color: black;
+    height: fit-content;
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 5vh;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+#foothead {
+    margin-bottom: 10px;
+}
+#footitem {
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+.si {
+    margin: 12px;
+    font-size: 20px;
+}
+
+.si i {
+    margin: 0 10px 0 10px;
 }
