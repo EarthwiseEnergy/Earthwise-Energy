@@ -60,12 +60,33 @@
       </div>
     </div>
 
+    <button onclick="topFunction()" id="backtotop"><i class="bi bi-arrow-up-square"></i></button>
+    <script>
+      
+      let mybutton = document.getElementById("backtotop");
+      
+     
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
     
-    <div class="body" style="height:5000px;background-color: #f7e7ce;">
+    <div class="body">
 
       <div class="content">
         <div class="scrollnav">
-          <a href="#a" class="list-group-item list-group-item-action" style="border-top: black 2px solid;"><span>What is Solar Energy? <img src="img/arrow.png"></span>  </a>
+          <a href="#a" class="list-group-item list-group-item-action" style="border-top: black 2px solid;"><span>Why Solar Energy? <img src="img/arrow.png"></span>  </a>
           <a href="#b" class="list-group-item list-group-item-action"><span>Costs <img src="img/arrow.png"></span></a>
           <a href="#c" class="list-group-item list-group-item-action"><span>Tax Benifits <img src="img/arrow.png"></span></a>
           <a href="#d" class="list-group-item list-group-item-action"><span>Good Practices <img src="img/arrow.png"></span></a>
@@ -74,26 +95,27 @@
           <p>Harness the power of our home star, which sends vast amounts of power to the earth every year. Almost anyone can tap into the fusion reactor in the sky and save on their electric bills.</p>
           <img src="img/panelonroof.jpg" class="img-fluid"> 
         </div>
-
+        
         <div class="container-fluid float-end" style="height: fit-content; width: 100%; margin-top: 6%;" id="a">
             <br>
-          <h2>What is solar energy?</h2>
+          <h2>Why solar energy?</h2>
             <br>
-          <p style="margin-left: 2%;">Solar energy is power derived from the sun's radiation. It's harnessed through various technologies like solar panels, which convert sunlight into electricity or heat for homes, businesses, and even satellites. </p>
+          <p style="margin-left: 2%;">Bathed in the sun's glow, our planet gets a ton of sunlight. Just one hour's worth could power the whole world for a whole year! 
+            As the source of almost all energy on Earth, there's no question as to how solar energy compares to regular fossil feuls. Practically anyone can buy and 
+            set up solar panels to use this abundant sunlight. Plus, it saves a lot on electricity bills in the long run.</p>
             <br>
-          <h4 style="margin-left: 1%;">How it works</h3>
+          <h3>How it works</h3>
             <br>
-          <p style="margin-left: 3%;">There are two types of technology that convert the sun's light into usable electricity.</p>
-              <br>
-            <ul style="margin-left: 2%; list-style: none;">
-              <li><strong>Photovoltaics</strong> - These make up more of the solar panels most people are familiar with, they are composed of small sheets called cells which are made from a semiconducting material. When photons from sunlight strike the cells, they excite electrons in the semiconductor material, creating an electric current. These cells are often less than the thickness of four human hairs, so in order to withstand the outdoors for many years, cells are sandwiched between protective materials in a combination of glass and/or plastics.</li>
-                <br>
-              <li><strong>Concentrating Solar Power (CSP)</strong> - Concentrating Solar power systems are mostly used for large scale solar plants. This variation of solar power uses mirrors to direct sunlight to a small area generating lots of heat. As the sun's rays hit these mirrors, they reflect and concentrate sunlight onto a central receiver, typically located at the top of a tower. The heat from the concentrated sunlight heats a fluid to very high temperatures, this fluid is then used to generate steam. This steam then drives a turbine which generates electricity. </li>
-            </ul>
+          <p style="margin-left: 2%;">There are two common methods to turn the sun's power into electricity. 
+            The first way is using photovoltaics (PV), those panels you see on roofs. When sunlight hits them, 
+            it creates an electric field, making electricity flow. The second way is concentrating solar power 
+            (CSP), mostly used in big power plants. It uses mirrors to focus sunlight onto special receivers, 
+            heating up a fluid, which then makes steam. This steam is used to spin a generator thus converting 
+            solar energy into electricity. To learn more about the mechanisms behind solar energy, click [<a href="https://www.energy.gov/eere/solar/how-does-solar-work">HERE</a>]</p>
               <br>
           <div class="img-container">
             <img src="img/Concentrating-Solar-Thermal-Power-Applications.png" class="img-fluid">
-            <figcaption style="font-size: 1vw;">Diagram for a CSP plant from the office of Energy Efficiancy & Renewable Energy</figcaption>
+            <figcaption style="font-size: .8rem;">Diagram for a CSP plant from the office of Energy Efficiency & Renewable Energy</figcaption>
           </div>
         </div>
 
@@ -101,14 +123,30 @@
             <br>
           <h2>Costs to consider</h2>
             <br>
-            <p style="margin-left: 2%;">The costs associated with installing solar panels can vary significantly based on a multitude of factors, shaping both the initial investment and long-term savings for homeowners and businesses alike.</p>
+            <p style="margin-left: 2%;">The cost of solar panels can varry based on various factors, like the size of the system, the type of panels, installation labor, 
+              location, and additional components. But typical residential systems can cost anywhere from $10,000 to $25,000. The cost of installing solar panels can 
+              be split into two main categories: Hard Costs, and Soft Costs. Hard costs refer to the cost of the hardware or the physical technology. Soft costs on the other 
+              hand, are all the logistical costs for going solar. These costs include permitting, financing, and installing solar, as well as the expenses solar companies 
+              incur to acquire new customers, pay suppliers, and cover their bottom line. Soft costs can make up a significant portion of the cost when it comes to installing 
+              solar panels. Learn More [<a href="https://www.energy.gov/eere/solar/solar-soft-costs-basics">HERE</a>]</p>
+            <br>
+          <h3>Savings</h3>    
+            <br>
+            <p style="margin-left: 2%;">The amount of money you can save with solar depends upon how much electricity you consume, the size of your solar energy system, 
+              and how much power it is able to generate given the direction your roof faces and how much sunlight hits it. Even though there are multiple factors that 
+              contribute to determining the savings solar panels make, on average about $100 - $150 is saved every month. Solar panels are known as great investments 
+              because they last upto 25 to 30 years and it only takes 7 to 10 years to pay for themselves. This allows for 15 to 23 years of passive savings. Additionally, 
+              homeowners are also able to setup Net Metering if their utilities allow for it. Net metering is an arrangement between solar energy system owners and utilities 
+              in which the system owners are compensated for any solar power generation that is exported to the electricity grid. Whether or not your solar system qualifies for
+               net metering payments depends on policies and practices in your state and electric utility. Find out more on Net metering [<a href="https://www.energysage.com/solar/net-metering/">HERE</a>]</p>
         </div>
 
         <div class="container-fluid float-end" style="height: fit-content; width: 100%; margin-top: 6%;" id="c">
             <br>
           <h2>Tax Benifits</h2>
             <br>
-          <p style="margin-left: 2%;"></p>
+          <p style="margin-left: 2%;">Switching to solar energy not only helps you reduce your environmental footprint but also comes with financial benefits. The Department of Energy  By going solar, 
+            many eligible homeowners can take advantage of a tax credit of 30% of the cost of a new solar energy system. </p>
         </div>
 
         <div class="container-fluid float-end" style="height: fit-content; width: 100%; margin-top: 6%;" id="d">
@@ -130,6 +168,7 @@
         <a href="#" style="color: white; text-decoration: none; "><i class="bi bi-twitter-x"></i></a>
         <a href="#" style="color: white; text-decoration: none; "><i class="bi bi-instagram"></i></a>
         <a href="#" style="color: white; text-decoration: none; "><i class="bi bi-linkedin"></i></a>
+        <a href="#" style="color: white; text-decoration: none; "><i class="bi bi-youtube"></i></a>
         <a href="#" style="color: white; text-decoration: none; "><i class="bi bi-facebook"></i></a>
       </div>
       <div class="container">
@@ -137,10 +176,10 @@
           <div class="col-sm">
             <ul>
               <li id="foothead">Sources</li>
-              <li id="footitem">DEPARTMENT OF ENERGY</li>
-              <li id="footitem">NATIONAL GEOGRAPHIC</li>
-              <li id="footitem">TESLA</li>
-              <li id="footitem">ENEL</li>
+              <li id="footitem"><a href="https://www.energy.gov/clean-energy">DEPARTMENT OF ENERGY <i class="bi bi-box-arrow-up-right"></i></a></li>
+              <li id="footitem"><a href="https://education.nationalgeographic.org/resource/renewable-energy/">NATIONAL GEOGRAPHIC <i class="bi bi-box-arrow-up-right"></i></a></li>
+              <li id="footitem"><a href="https://www.tesla.com/support/energy/solar-panels/learn/go-solar">TESLA <i class="bi bi-box-arrow-up-right"></i></a></li>
+              <li id="footitem"><a href="https://www.enelgreenpower.com/learning-hub">ENEL <i class="bi bi-box-arrow-up-right"></i></a></li>
             </ul>
           </div>
           <div class="col-sm">

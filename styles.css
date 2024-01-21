@@ -53,6 +53,8 @@ nav li {
     padding: 0 10px 0 10px;
     font-weight: 300;
 }
+
+
  
 @media (min-width: 1261px) {
 
@@ -84,6 +86,26 @@ footer ul {
 #footitem {
     font-weight: lighter;
     font-size: smaller;
+}
+
+#footitem a {
+    text-decoration: none;
+    color: white;
+}
+
+#footitem .out {
+    opacity: 0;
+}
+
+#footitem a:hover {
+    text-decoration: underline;
+    color: #7ac242;
+    transition: 450ms;
+}
+
+#footitem a:hover i {
+    opacity: 1;
+    transition: 100ms;
 }
 
 .si {

@@ -27,10 +27,10 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item" id="seperator">
-                <a class="nav-link" href="#">Availiablility</a>
+                <a class="nav-link" href="#">Providers</a>
               </li>
               <li class="nav-item" id="seperator">
-                <a class="nav-link" href="#">Our Partners</a>
+                <a class="nav-link" href="#">Contacts</a>
               </li>
               <li class="nav-item dropdown" id="seperator">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,6 +60,29 @@
         </div>
       </nav>
     </header>
+
+    <button onclick="topFunction()" id="backtotop"><i class="bi bi-arrow-up-square"></i></button>
+    <script>
+      
+      let mybutton = document.getElementById("backtotop");
+      
+     
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
     <div class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner" id="carousel">
         <div class="carousel-item active">
@@ -169,8 +192,9 @@
     <img src="img/Earthwise_logo.png" style="height: 6vh; margin: 5px;">
     <div class="float-end si">
       <a href="#" style="color: white; text-decoration: none; "><i class="bi bi-twitter-x"></i></a>
-      <a href="#" style="color: white; text-decoration: none; "><i class="bi bi-instagram"></i></a>
+      <a href="https://www.instagram.com/ranchviewtsa/?hl=en" style="color: white; text-decoration: none; "><i class="bi bi-instagram"></i></a>
       <a href="#" style="color: white; text-decoration: none; "><i class="bi bi-linkedin"></i></a>
+      <a href="#" style="color: white; text-decoration: none; "><i class="bi bi-youtube"></i></a>
       <a href="#" style="color: white; text-decoration: none; "><i class="bi bi-facebook"></i></a>
     </div>
     <div class="container">
@@ -178,34 +202,31 @@
         <div class="col-sm">
           <ul>
             <li id="foothead">Sources</li>
-            <li id="footitem">DEPARTMENT OF ENERGY</li>
-            <li id="footitem">NATIONAL GEOGRAPHIC</li>
-            <li id="footitem">TESLA</li>
-            <li id="footitem">ENEL</li>
+            <li id="footitem"><a href="https://www.energy.gov/clean-energy">DEPARTMENT OF ENERGY <i class="bi bi-box-arrow-up-right out"></i></a></li>
+            <li id="footitem"><a href="https://education.nationalgeographic.org/resource/renewable-energy/">NATIONAL GEOGRAPHIC <i class="bi bi-box-arrow-up-right out"></i></a></li>
+            <li id="footitem"><a href="https://www.tesla.com/support/energy/solar-panels/learn/go-solar">TESLA <i class="bi bi-box-arrow-up-right out"></i></a></li>
+            <li id="footitem"><a href="https://www.enelgreenpower.com/learning-hub">ENEL <i class="bi bi-box-arrow-up-right out"></i></a></li>
           </ul>
         </div>
         <div class="col-sm">
           <ul>
             <li id="foothead">Get Clean Energy</li>
-            <li id="footitem">GREEN MOUTAIN ENERGY</li>
-            <li id="footitem">TXU ENERGY</li>
-            <li id="footitem">SHELL ENERGY</li>
-            <li id="footitem"></li>
+            <li id="footitem"><a href="https://www.greenmountainenergy.com/">GREEN MOUTAIN ENERGY <i class="bi bi-box-arrow-up-right out"></i></a></li>
+            <li id="footitem"><a href="https://www.txu.com/renewable-energy">TXU ENERGY <i class="bi bi-box-arrow-up-right out"></i></a></li>
+            <li id="footitem"><a href="https://shellenergy.com/Renewable">SHELL ENERGY <i class="bi bi-box-arrow-up-right out"></i></a></li>
           </ul>
         </div>
         <div class="col-sm">
           <ul>
             <li id="foothead">Contact Us</li>
-            <li id="footitem">830-905-0017</li>
-            <li id="footitem">EarthwiseEnergy@gmail.com</li>
+            <li id="footitem"><i class="bi bi-telephone"></i> 830-905-0017</li>
+            <li id="footitem"><i class="bi bi-envelope"></i> EarthwiseEnergy@gmail.com</li>
             <li id="footitem">Professionals</li>
             <li id="footitem">Address</li>
           </ul>
         </div>
       </div>
     </div>
-    
   </footer>
-    
   </body>
 </html>
