@@ -27,10 +27,10 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item" id="seperator">
-                <a class="nav-link" href="#">Availiablility</a>
+                <a class="nav-link" href="#">Providers</a>
               </li>
               <li class="nav-item" id="seperator">
-                <a class="nav-link" href="#">Our Partners</a>
+                <a class="nav-link" href="#">Contacts</a>
               </li>
               <li class="nav-item dropdown" id="seperator">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,26 +44,52 @@
                 </ul>
               </li>
               <li class="nav-item" id="seperator">
-                <a class="nav-link" href="#">Learn More</a>
+                <a class="nav-link" href="#">About</a>
               </li>
-              <li class="nav-item" id="seperator">
-                <a class="nav-link" href="#">Link</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  LNG
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">ENG</a></li>
+                  <li><a class="dropdown-item" href="#">ESPANOL</a></li>
+                </ul>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <div id="head_img" style="background-image: url(img/sander-weeteling-iGDg_f_mlWo-unsplash.jpg); ">
+    <div id="head_img" style="background-image: url(img/windturbine.jpg); ">
       <div id="titlecard">
         <h1>Wind</h1>
       </div>
     </div>
 
+    <button onclick="topFunction()" id="backtotop"><i class="bi bi-arrow-up-square"></i></button>
+    <script>
+      
+      let mybutton = document.getElementById("backtotop");
+      
+     
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
     
-    <div class="body" style="height:5000px;background-color: #f7e7ce;">
-
-      <div class="content">
+    <div class="body">
+      <div style="width: 80%; margin: auto;">
         <div class="scrollnav">
           <a href="#a" class="list-group-item list-group-item-action" style="border-top: black 2px solid;"><span>What is Wind Energy?<img src="img/arrow.png"></span>  </a>
           <a href="#b" class="list-group-item list-group-item-action"><span>Costs <img src="img/arrow.png"></span></a>
@@ -71,22 +97,32 @@
           <a href="#d" class="list-group-item list-group-item-action"><span>Good Practices <img src="img/arrow.png"></span></a>
         </div>
         <div class="box">
-          <p>Harness the power of our home star, which sends vast amounts of power to the earth every year. Almost anyone can tap into the fusion reactor in the sky and save on their electric bills.</p>
-          <img src="img/panelonroof.jpg" class="img-fluid"> 
+          <p>Where turbines do the twist to power our world with a breezy elegance. It's like Mother Nature's way of keeping the lights on, one gust at a time.</p>
+          <img src="img/oceanwindfarm.jpg" class="img-fluid"> 
+          <figcaption class="attrib">Photo by <a href="https://unsplash.com/@nrdoherty?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nicholas Doherty</a> on <a href="https://unsplash.com/photos/white-electic-windmill-pONBhDyOFoM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
         </div>
-
+      </div>
+      <div class="content">
         <div class="container-fluid float-end" style="height: fit-content; width: 100%; margin-top: 6%;" id="a">
             <br>
-          <h2>What is Wind energy?</h2>
+          <h2>Why Wind energy?</h2>
             <br>
-          <p style="margin-left: 2%;"></p>
+          <p style="margin-left: 2%;">Switching to wind energy is a forward-thinking choice that aligns with both environmental sustainability and economic efficiency. 
+            Harnessing the power of the wind for electricity generation significantly reduces reliance on finite fossil fuels, curbing harmful emissions and contributing 
+            to a cleaner, greener future. Additionally, as technology advances, wind energy has become increasingly cost-effective, making it a smart and responsible choice 
+            for individuals and businesses looking to embrace renewable energy solutions.</p>
             <br>
-          <h4 style="margin-left: 1%;"></h3>
+          <h3>How wind energy works</h3>
             <br>
-          <p style="margin-left: 3%;"></p>
-              <br>
+          <p style="margin-left: 2%;">Wind is mainly turned into energy via wind turbines. Wind turbines turn wind into electricity using the aerodynamic force from the rotor blades, 
+            which work like an airplane wing or helicopter rotor blade. When wind flows across the blade, the air pressure on one side of the blade decreases. The difference in 
+            air pressure across the two sides of the blade creates both lift and drag. The force of the lift is stronger than the drag and this causes the rotor to spin. The rotor 
+            connects to the generator, either directly (if it’s a direct drive turbine) or through a shaft and a series of gears (a gearbox) that speed up the rotation and allow for 
+            a physically smaller generator. This translation of aerodynamic force to rotation of a generator creates electricity. </p>
+            <br>
           <div class="img-container">
-            <figcaption style="font-size: 1vw;"></figcaption>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UWSckm8zTc8?si=x-EMkK6v5AEUtxrz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <figcaption style="font-size: .8rem; padding: none;"><i>Watch Tom Scott a he dives into the inner workings of a wind turbine</i></figcaption>
           </div>
         </div>
 
@@ -94,7 +130,12 @@
             <br>
           <h2>Costs to consider</h2>
             <br>
-            <p style="margin-left: 2%;"></p>
+          <p style="margin-left: 2%;">While most people aren't going around building industrial scale wind turbines in their backyards, there are plenty of options when it comes to 
+            sourcing energy from wind. Homeowners have the option to install small residential wind turbines to contribute power to their homes. Homeowners looking to install a 
+            small wind electric system should first consider a few costs. Firstly, the cost of the turbine and the installation can be thousands of dollars, additionally, 
+            homeowners will need to keep up with maintenence costs. As big of an investment this may seem, small wind electric systems can be well worth it. They can lower your 
+            electricity bills by 50%-90%, help you avoid the high costs of having utility power lines extended to a remote location, and help uninterruptible power supplies ride through 
+            extended utility outages. Learn More [<a href="https://www.energy.gov/energysaver/installing-and-maintaining-small-wind-electric-system">HERE</a>]</p>
         </div>
 
         <div class="container-fluid float-end" style="height: fit-content; width: 100%; margin-top: 6%;" id="c">

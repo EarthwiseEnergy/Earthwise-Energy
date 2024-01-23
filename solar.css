@@ -2,6 +2,11 @@ h2 {
     font-size: clamp(1.5rem, 12vw + 1rem, 2.5rem) !important;
 }
 
+.attrib a {
+    color: black;
+    font-weight: bold;
+}
+
 h1, h2, h3 {
     font-weight: bold !important;
 }
@@ -25,7 +30,7 @@ h1, h2, h3 {
 }
 
 .content {
-    width: 80%;
+    width: 60%;
     margin: auto;
     padding: 2%;
 }
@@ -121,6 +126,9 @@ h1, h2, h3 {
 
     .box p { 
         font-size: 1.2vw;
+    }
+
+    .box p, .attrib {
         padding-left: 8%;
         padding-top: 3%; 
     }
@@ -169,17 +177,13 @@ h1, h2, h3 {
         overflow: hidden;
     }
 
-    .box p { 
-        font-size: clamp(1vw, 2.5vw, 1.3rem);
+    .box p, .attrib { 
+        font-size: .6rem;
         padding-left: 10%;
         padding-top: 3%; 
     }
 
 }
-
-
-
-
 
 .img-container {
     height: fit-content;
