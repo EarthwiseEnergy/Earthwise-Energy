@@ -22,12 +22,12 @@ h1, h2, h3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(img/contacthead.jpg);
+    background-image: url("img/abouthead.jpg");
     height: 500px;
 }
 
 .headoverlay {
-    background-color: rgb(0, 0, 0, 0.45);
+    background-color: rgb(0, 0, 0, 0.6);
     color: white;
     width: inherit;
     height: inherit;
@@ -37,7 +37,7 @@ h1, h2, h3 {
     height: fit-content;
     width: 55%;
     position: absolute;
-    top: 25%;
+    top: 40%;
     right: 0;
 }
 
@@ -47,26 +47,7 @@ h1, h2, h3 {
     background-color: #f7e7ce;
 }
 
-.profiles {
-    width: 80%;
-    margin: auto !important;
+.citation {
+    list-style: none;
+    margin-bottom: 5%;
 }
-
-.card {
-    margin: 0 5% 0 5%;
-    background-color: inherit !important;
-    border: none !important;
-}
-
-.profimg {
-    height: 200px;
-    width: 200px;
-    border-radius: 15px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.card h4 {
-    color:rgb(3, 119, 7);
-}
-

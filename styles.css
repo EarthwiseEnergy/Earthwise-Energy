@@ -59,11 +59,11 @@ nav li {
 @media (min-width: 1261px) {
 
 #carousel {
-    height: 90vh;
+    height: 95vh;
 }
 
 .carousel-item {
-    height: 90vh;
+    height: 95vh;
 }
 
 }
@@ -115,4 +115,10 @@ footer ul {
 
 .si i {
     margin: 0 10px 0 10px;
+}
+
+.copy {
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 10px;
 }
