@@ -128,3 +128,17 @@
 .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
   color: red;
 }
+
+.carousel-indicators li {
+  width: 15px; /* Adjust the width as needed */
+  height: 15px; /* Adjust the height as needed */
+  margin: 0 5px; /* Adjust the margin as needed */
+  background-color: #888; /* Set the background color of inactive dots */
+  border: 1px solid #555; /* Set the border color of inactive dots */
+  cursor: pointer;
+}
+
+/* Style for the active dot */
+.carousel-indicators .active {
+  background-color: #555; /* Set the background color of the active dot */
+}
